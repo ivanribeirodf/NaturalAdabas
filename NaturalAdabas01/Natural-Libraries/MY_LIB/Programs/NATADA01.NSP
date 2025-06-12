@@ -1,0 +1,23 @@
+* >Natural Source Header 000000
+* :Mode S
+* :CP
+* <Natural Source Header
+/** New Program NATADA01.
+/**
+/** :author Ivan Ribeiro
+/* TODO Enter your code here
+DEFINE DATA LOCAL
+1 MES (A10)
+1 PESSOAS
+    2 NOME        (A20)
+    2 IDADE        (N2)
+END-DEFINE
+
+/*ATRIBUIÇÕES
+MOVE 'IVAN RIBEIRO' TO NOME
+IDADE := 50
+
+WRITE NOME /
+      'IDADE: ' IDADE
+    
+END
