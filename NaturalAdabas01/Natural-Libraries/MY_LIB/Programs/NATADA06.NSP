@@ -1,0 +1,28 @@
+* >Natural Source Header 000000
+* :Mode S
+* :CP
+* <Natural Source Header
+/** New Program NATADA06.
+/**
+/** :author Ivan Ribeiro
+/* TODO Enter your code here
+DEFINE DATA LOCAL
+1 FUNCIONARIOS
+    2 NOME    (A20)
+    2 IDADE    (N3)
+END-DEFINE
+
+INPUT NOME / IDADE
+
+/* DECIDE SE ASSEMELHA AO IF ELSE
+/* AS CONDICOES SERAO VERIFICADAS
+
+DECIDE FOR FIRST CONDITION
+    WHEN IDADE < 30
+        WRITE '=' NOME / 'TEM MENOS DE 30 ANOS'
+    WHEN IDADE = 30
+        WRITE '=' NOME / 'TEM 30 ANOS'
+    WHEN NONE
+        WRITE '=' NOME / 'TEM MAIS DE 30 ANOS'
+END-DECIDE        
+END
