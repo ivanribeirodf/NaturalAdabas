@@ -1,0 +1,28 @@
+* >Natural Source Header 000000
+* :Mode S
+* :CP
+* <Natural Source Header
+/** New Program NATADA05.
+/**
+/** :author Ivan Ribeiro
+/* TODO Enter your code here
+DEFINE DATA LOCAL
+1 FUNCIONARIOS
+    2 PRIMEIRO-NOME            (A20)
+    2 ULTIMO-NOME            (A20)
+    2 IDADE                    (N3)    
+END-DEFINE
+
+INPUT PRIMEIRO-NOME / ULTIMO-NOME / IDADE
+
+/* DECIDE SE ASSEMELHA AO IF ELSE, POREM COM MAIS CONDICOES
+/* AQUI A VARIAVEL IDADE É QUEM SERÁ VERIFICADA
+DECIDE ON FIRST VALUE IDADE
+    VALUE 25, 30, 35
+        WRITE PRIMEIRO-NOME / ULTIMO-NOME / 'TEM 25, 30 OU 35 ANOS'
+    VALUE 36:50 /* intervalos
+        WRITE PRIMEIRO-NOME / ULTIMO-NOME / 'TEM DE 36  A 50 ANOS'
+    NONE
+        WRITE PRIMEIRO-NOME / ULTIMO-NOME / 'TEM OUTRA IDADE'
+END-DECIDE        
+END
