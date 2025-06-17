@@ -1,0 +1,25 @@
+* >Natural Source Header 000000
+* :Mode S
+* :CP
+* <Natural Source Header
+/** New Program NATADA10.
+/**
+/** :author Ivan Ribeiro
+/* TODO Enter your code here
+DEFINE DATA LOCAL
+1 #INDEX     (I1)
+1 #ROOT      (N2.7)
+END-DEFINE
+*
+FOR #INDEX 1 TO 5
+    COMPUTE #ROOT = SQRT (#INDEX)
+    WRITE NOTITLE '=' #INDEX 3X '=' #ROOT    
+END-FOR
+*
+SKIP 1
+FOR #INDEX 1 TO 5 STEP 2
+    COMPUTE #ROOT = SQRT (#INDEX)
+    WRITE '=' #INDEX 3X '=' #ROOT
+END-FOR
+*
+END
